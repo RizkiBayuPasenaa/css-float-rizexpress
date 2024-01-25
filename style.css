@@ -17,8 +17,8 @@ li , a {
 
 body {
     font-family: 'Montserrat', sans-serif;
-    height: 2000px;
     scrollbar-width: hidden;
+    width: 100%;
 }
 
 body::-webkit-scrollbar {
@@ -135,6 +135,29 @@ main {
     background: rgba(0,0,0,0.4) url(asset/background1.png);
     background-size: cover;
     background-blend-mode: darken;
+    animation: slide 10s infinite alternate;
+}
+
+@keyframes slide {
+    0% {
+        background: rgba(0,0,0,0.4) url(asset/background1.png);
+        background-size: cover;
+    }
+
+    35% {
+        background: rgba(0,0,0,0.4) url(asset/background2.png);
+        background-size: cover;
+    }
+
+    70% {
+        background: rgba(0,0,0,0.4) url(asset/background3.png);
+        background-size: cover;
+    }
+
+    100% {
+        background: rgba(0,0,0,0.4) url(asset/background1.png);
+        background-size: cover;
+    }
 }
 
 .text-content {
@@ -177,6 +200,207 @@ main h1:nth-child(1) {
 .search input:focus {
     outline:none;
 }
+/* Feature content */
+
+.feature {
+    text-align: center;
+    background-color: var(--primary--);
+}
+
+.feature h1 {
+    padding-top: 20px;
+    text-align: center;
+    font-size: 2.4rem;
+    color: var(--secondary--);
+}
+
+.container-feature div {
+    width: 200px;
+    margin-top: 40px;
+    display: inline-block;
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.container-feature div img {
+    width: 140px;
+}
+
+.container-feature div:nth-child(2) img {
+    width: 100px;
+}
+
+.container-feature div:nth-child(3) img {
+    width: 90px;
+}
+
+.container-feature div:nth-child(4) img {
+    width: 60px;
+}
+
+.container-feature div p {
+    font-size: 16px;
+    font-weight: 600;
+    margin-top: 8px;
+    color: var(--secondary--);
+}
+
+/* Container-ulasan */
+
+.container-ulasan {
+    background-color: var(--primary--);
+    margin-top: 20px;
+    padding-bottom: 50px;
+}
+
+.hero-ulasan {
+    width: 400px;
+    height: 400px;
+    border-radius: 20px;
+    background-image:url(asset/ulasan@2x.png);
+    background-size: cover;
+    display: inline-block;
+    margin-right: 50px;
+    box-shadow: 10px 10px;
+
+}
+
+.text-ulasan {
+    display: inline-block;
+    vertical-align: top;
+    width: 400px;
+    height: 400px;
+}
+
+.text-ulasan h1{
+    color: var(--secondary--);
+    margin-top: 100px;
+    font-size: 2rem;
+}
+
+.text-ulasan p {
+    margin-top: 30px;
+    font-weight: 600;
+    font-size: 1rem;
+    color: var(--secondary--);
+}
+
+/* Produk dan layanan */
+
+.produk {
+    background-color: var(--secondary--);
+    text-align: center;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    position: relative;
+}
+
+.produk h1 {
+    color: var(--primary--);
+    font-size: 2.4rem;
+    font-weight: 700;
+}
+
+.container-produk {
+    margin-top: 40px;
+}
+
+.container-card {
+    background-color: var(--primary--);
+    width: 370px;
+    display: inline-block;
+    margin: 12px;
+    text-align: left;
+    border-radius: 14px 14px; 
+}
+
+.container-card img:nth-child(1) {
+    width: 100%;
+    border-radius: 14px 14px 0 0;
+    height: 220px; 
+}
+
+.container-card img:nth-child(2) {
+    width: 100px;
+    margin: 10px 10px;
+}
+
+.container-card h3 {
+    margin: 0 10px 10px 20px;
+    font-weight: 700;
+    font-size: 16px;
+    color: var(--secondary--); 
+}
+
+.container-mockup {
+    margin-top: 50px;
+}
+
+.bubble {
+    display: inline-block;
+    position: relative;
+    left: 90px;
+    margin: 50px;
+    width: 450px;
+    height: 450px;
+    border-radius: 50%;
+    background-color: var(--primary--);
+}
+
+.container-mockup img {
+    display: inline-block;
+    position: absolute;
+    left: 30%;
+    width: 600px;
+}
+
+.get-in-on img {
+    width: 500px;
+}
+
+/* Footer */
+
+.footer {
+    color: var(--text--);
+    margin-top: 60px;
+}
+/* 
+.contact{
+    display: inline-block;
+} */
+
+.footer-left {
+    float: left;
+    margin-left: 5%;
+    margin-right: 100px;
+    padding: 20px
+}
+
+.footer-right {
+    float: right;
+    padding: 20px
+}
+
+.footer-right ul {
+    display: inline-block;
+}
+
+.wrapper-footer-right ul li {
+    margin-right: 150px;
+}
+
+.copyright {
+    background-color: var(--text--);
+    color: var(--secondary--);
+    margin-top: 50px;
+}
+
+.copyright p {
+    font-size: 1rem;
+    font-weight: 600;
+    text-align: center;
+    padding: 15px 0;
+}
 
 /* responsive */
 /* Laptop */
@@ -189,8 +413,170 @@ main h1:nth-child(1) {
     }
     
 }
+
+@media screen and (max-width:1000px) {
+
+    *{
+        font-size: 85%;
+    }
+
+    .feature {
+        text-align: center;
+        background-color: var(--primary--);
+    }
+
+    .feature h1 {
+        padding-top: 20px;
+        text-align: center;
+        font-size: 2.4rem;
+        color: var(--secondary--);
+    }
+
+    .container-feature div {
+        width: 180px;
+        margin-top: 40px;
+        display: inline-block;
+        text-align: center;
+        margin-bottom: 50px;
+    }
+
+    .container-feature div img {
+        width: 120px;
+    }
+
+    .container-feature div:nth-child(2) img {
+        width: 80px;
+    }
+
+    .container-feature div:nth-child(3) img {
+        width: 60px;
+    }
+
+    .container-feature div:nth-child(4) img {
+        width: 40px;
+    }   
+
+    .container-feature div p {
+        font-size: 14px;
+        font-weight: 600;
+        margin-top: 8px;
+        color: var(--secondary--);
+    }
+    .container-ulasan {
+        background-color: var(--primary--);
+        margin-top: 20px;
+        padding-bottom: 50px;
+    }
+
+    .hero-ulasan {
+        width: 350px;
+        height: 350px;
+        border-radius: 20px;
+        background-image:url(asset/ulasan@2x.png);
+        background-size: cover;
+        display: inline-block;
+        margin-right: 40px;
+        box-shadow: 10px 10px;
+
+    }
+
+    .text-ulasan {
+        display: inline-block;
+        vertical-align: top;
+        width: 350px;
+        height: 350px;
+    }
+
+    .text-ulasan h1{
+        color: var(--secondary--);
+        margin-top: 100px;
+        font-size: 2rem;
+    }
+
+    .text-ulasan p {
+        margin-top: 30px;
+        font-weight: 600;
+        font-size: 1rem;
+        color: var(--secondary--);
+    }
+
+    .produk {
+        background-color: var(--secondary--);
+        text-align: center;
+        padding-top: 50px;
+        padding-bottom: 50px;
+    }
+
+    .produk h1 {
+        color: var(--primary--);
+        font-size: 2.4rem;
+        font-weight: 700;
+    }
+
+    .container-produk {
+        margin-top: 40px;
+    }
+
+    .container-card {
+        background-color: var(--primary--);
+        width: 370px;
+        display: inline-block;
+        margin: 12px;
+        text-align: left;
+        border-radius: 14px 14px; 
+    }
+
+    .container-card img:nth-child(1) {
+        width: 100%;
+        border-radius: 14px 14px 0 0;
+        height: 220px; 
+    }
+
+    .container-card img:nth-child(2) {
+        width: 100px;
+        margin: 10px 10px;
+    }
+
+    .container-card h3 {
+        margin: 0 10px 10px 20px;
+        font-weight: 700;
+        font-size: 16px;
+        color: var(--secondary--); 
+    }
+
+    .container-mockup {
+        margin-top: 50px;
+    }
+
+    .bubble {
+        display: inline-block;
+        position: relative;
+        left: 90px;
+        margin: 50px;
+        width: 450px;
+        height: 450px;
+        border-radius: 50%;
+        background-color: var(--primary--);
+    }
+
+    .container-mockup img {
+        display: inline-block;
+        position: absolute;
+        left: 30%;
+        width: 600px;
+    }
+
+    .get-in-on img {
+        width: 500px;
+    }
+
+    
+}
+
+
+
 /* Tablet */
-@media screen and (max-width:776px ) and (min-width:400px) {
+@media screen and (max-width:800px ) and (min-width:500px) {
     *{
         font-size: 75%;
     }
@@ -244,7 +630,7 @@ main h1:nth-child(1) {
 }
 /* Handphone */
 
-@media screen and (max-width: 399px){
+@media screen and (max-width: 499px){
     *{
         font-size: 50%;
     }
@@ -300,36 +686,8 @@ main h1:nth-child(1) {
 
 }
 
-/* Feature content */
 
-section {
-    text-align: center;
-    background-color: var(--primary--);
-}
-section h1 {
-    margin:0;
-    text-align: center;
-    font-size: 2.8rem;
-    color: var(--secondary--);
-}
 
-.container-feature div {
-    width: 200px;
-    margin-top: 40px;
-    display: inline-block;
-    text-align: center;
-}
 
-.container-feature div img {
-    width: 140px;
-}
-.container-feature div:nth-child(2) img {
-    width: 100px;
-}
 
-.container-feature div p {
-    font-size: 16px;
-    font-weight: 600;
-    margin-top: 8px;
-    color: var(--secondary--);
-}
+
