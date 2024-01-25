@@ -655,7 +655,6 @@ main h1:nth-child(1) {
     .wrapper-footer-right ul li a {
         color: var(--secondary--);
         font-size: 1rem;
-        margin-bottom: ;
     }
 
     .wrapper-footer-right ul li h5 {
@@ -876,7 +875,6 @@ main h1:nth-child(1) {
     .wrapper-footer-right ul li a {
         color: var(--secondary--);
         font-size: 1rem;
-        margin-bottom: ;
     }
 
     .wrapper-footer-right ul li h5 {
@@ -1132,7 +1130,6 @@ main h1:nth-child(1) {
     .wrapper-footer-right ul li a {
         color: var(--secondary--);
         font-size: 1rem;
-        margin-bottom: ;
     }
 
     .wrapper-footer-right ul li h5 {
@@ -1161,10 +1158,7 @@ main h1:nth-child(1) {
         text-align: center;
         padding: 15px 0;
 
+    }
+
+
 }
-
-
-
-
-
-
