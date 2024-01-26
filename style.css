@@ -142,17 +142,17 @@ main {
 
 @keyframes slide {
     0% {
-        background: rgba(0,0,0,0.4) url(asset/background1.png);
+        background: rgba(0,0,0,0.4) url(asset/background-1.png);
         background-size: cover;
     }
 
     35% {
-        background: rgba(0,0,0,0.4) url(asset/background2.png);
+        background: rgba(0,0,0,0.4) url(asset/background-2.png);
         background-size: cover;
     }
 
     70% {
-        background: rgba(0,0,0,0.4) url(asset/background3.png);
+        background: rgba(0,0,0,0.4) url(asset/background-3.png);
         background-size: cover;
     }
 
