@@ -139,6 +139,7 @@ main {
     background-size: cover;
     background-blend-mode: darken;
     animation: slide 10s infinite alternate;
+    height: 100vh;
 }
 
 @keyframes slide {
@@ -171,7 +172,7 @@ main {
 }
 
 main h1:nth-child(1) {
-    margin-top: 100px;
+    margin-top: 150px;
 } 
 
 .search {
